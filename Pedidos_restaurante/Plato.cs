@@ -6,16 +6,18 @@ namespace Pedidos_restaurante
 {
     class Plato
     {
-        public Plato()
-        {
-
-        }
-        private int cantidad;
-
+        
         public string Contenido { get; set; }
         public string Tamano_plato { get; set; }
         public double Precio { get; set; }
         public string Nombre { get; set; }
+
+        private int cantidad;
+
+        public Plato()
+        {
+
+        }
 
         public int Cantidad
         {
@@ -35,6 +37,11 @@ namespace Pedidos_restaurante
         public void anadirCantidad()
         {
             Cantidad++;
+        }
+
+        public void quitarCantidad()
+        {
+            Cantidad--;
         }
 
     }
